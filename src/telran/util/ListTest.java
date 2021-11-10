@@ -280,7 +280,7 @@ String initialStrings[] = {"name1", "name2"};
 			}
 		}
 		Integer expected[] = { 20, 40 };
-		assertEquals(expected, getArrayFromList(numbers));
+		assertArrayEquals(expected, getArrayFromList(numbers));
 		it = numbers.iterator();
 	}
 
