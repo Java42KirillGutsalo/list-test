@@ -266,7 +266,7 @@ String initialStrings[] = {"name1", "name2"};
 		//List<Integer> list = new LinkedList<>();
 		List<Integer> list = new ArrayList<>();
 		fillListPerformance(list);
-		Predicate<Integer> divider4Predicate = t -> t / 4 == 0;
+		Predicate<Integer> divider4Predicate = t -> t % 4 == 0;
 		list.removeIf(divider4Predicate);
 		assertEquals(-1, list.indexOf(divider4Predicate));
 		
